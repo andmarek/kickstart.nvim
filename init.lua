@@ -27,6 +27,9 @@ end)
 -- Enable break indent
 vim.opt.breakindent = true
 
+-- Smooth scrolling
+vim.opt.smoothscroll = true
+
 -- Save undo history
 vim.opt.undofile = true
 
@@ -308,8 +311,10 @@ require('lazy').setup({
     config = function()
       local harpoon = require 'harpoon'
       harpoon:setup()
-      -- basic telescope configuration
-      local conf = require('telescope.config').values
+
+      local telescope_conf = require('telescope.config').values
+
+      -- Creates a telescope window with the harpoon items
       local function toggle_telescope(harpoon_files)
         local file_paths = {}
         for _, item in ipairs(harpoon_files.items) do
@@ -322,8 +327,8 @@ require('lazy').setup({
             finder = require('telescope.finders').new_table {
               results = file_paths,
             },
-            previewer = conf.file_previewer {},
-            sorter = conf.generic_sorter {},
+            previewer = telescope_conf.file_previewer {},
+            sorter = telescope_conf.generic_sorter {},
           })
           :find()
       end
@@ -356,6 +361,8 @@ require('lazy').setup({
   { import = 'kickstart.plugins.neo-tree' },
   { import = 'custom.plugins.colorscheme' },
   { import = 'custom.plugins.vim_maximizer' },
+  { import = 'kickstart.plugins.lualine' },
+  { import = 'custom.plugins.supermaven' },
   { import = 'custom.plugins' },
 
   -- [[ LSP Plugins ]]
