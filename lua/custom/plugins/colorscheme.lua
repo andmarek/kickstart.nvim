@@ -1,5 +1,8 @@
 return {
   {
+    'erikbackman/brightburn.vim',
+  },
+  {
     'catppuccin/nvim',
     lazy = false,
     priority = 1000,
