@@ -4,12 +4,12 @@ vim.keymap.set('n', '[q', '<cmd>cprev<CR>', { desc = 'Previous quickfix item' })
 
 -- Open Oil
 -- requires oil plugin and opens float
-vim.keymap.set('n', '<leader>o', ':Oil<CR>', { desc = 'Open Oil' })
+-- vim.keymap.set('n', '<leader>o', ':Oil<CR>', { desc = 'Open Oil' })
 
-
-
-
-
+-- nnoremap("<leader>e", function()
+-- 	require("oil").toggle_float()
+-- end)
+vim.keymap.set('n', '<leader>o', require('oil').toggle_float, { desc = 'Open Oil' })
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`

@@ -6,6 +6,7 @@ vim.opt.mouse = 'a'
 
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
+
 -- Enable break indent
 vim.opt.breakindent = true
 
@@ -14,11 +15,16 @@ vim.opt.smoothscroll = true
 
 -- Save undo history
 vim.opt.undofile = true
+
+-- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Keep signcolumn on by default
 vim.opt.signcolumn = 'yes'
+
+-- Disable text wrapping
+vim.opt.wrap = false
 
 -- Decrease update time
 vim.opt.updatetime = 250
@@ -44,8 +50,12 @@ vim.opt.inccommand = 'split'
 -- Show which line your cursor is on
 vim.opt.cursorline = true
 
+-- Place a column line at 80 characters
+vim.opt.colorcolumn = "80"
+
+
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 8
 --
 -- Sync clipboard between OS and Neovim.
 --  Schedule the setting after `UiEnter` because it can increase startup-time.

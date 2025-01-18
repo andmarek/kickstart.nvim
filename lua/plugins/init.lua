@@ -8,6 +8,7 @@ return {
   { import = 'plugins.configs.neo-tree' },
   { import = 'plugins.configs.oil' },
   { import = 'plugins.configs.trouble' },
+  { import = 'plugins.configs.conform' },
   { import = 'plugins.configs.autopairs' },
   { import = 'plugins.configs.indent-blankline' },
   { import = 'plugins.configs.vim-maximizer' },
@@ -17,8 +18,9 @@ return {
   { import = 'plugins.configs.todo-comments' },
   { import = 'plugins.configs.debug' },
   { import = 'plugins.configs.harpoon' },
+  { import = 'plugins.configs.peek' },
 
   -- LSP-related plugins
   { import = 'plugins.configs.lsp' },
-  { import = 'plugins.configs.lsp.completion' }
+  { import = 'plugins.configs.lsp.completion' },
 }
