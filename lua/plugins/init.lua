@@ -19,6 +19,8 @@ return {
   { import = 'plugins.configs.debug' },
   { import = 'plugins.configs.harpoon' },
   { import = 'plugins.configs.peek' },
+  { import = 'plugins.configs.copilot-chat' },
+  { import = 'plugins.configs.lazygit' },
 
   -- LSP-related plugins
   { import = 'plugins.configs.lsp' },
