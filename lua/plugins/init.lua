@@ -10,7 +10,6 @@ return {
   { import = 'plugins.configs.trouble' },
   { import = 'plugins.configs.conform' },
   { import = 'plugins.configs.autopairs' },
-  { import = 'plugins.configs.indent-blankline' },
   { import = 'plugins.configs.vim-maximizer' },
   { import = 'plugins.configs.mini' },
   { import = 'plugins.configs.dropbar' },
@@ -21,6 +20,7 @@ return {
   { import = 'plugins.configs.peek' },
   { import = 'plugins.configs.copilot-chat' },
   { import = 'plugins.configs.lazygit' },
+  { import = 'plugins.configs.snacks' },
 
   -- LSP-related plugins
   { import = 'plugins.configs.lsp' },
